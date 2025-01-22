@@ -1,0 +1,6 @@
+pyspark
+snowflake-connector-python
+boto3
+pyarrow
+sqlalchemy
+pytest
