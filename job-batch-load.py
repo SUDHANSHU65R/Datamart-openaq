@@ -15,8 +15,8 @@ def init_spark_session():
     secret = os.environ.get("aws_secret_key")
 
     spark = (
-        SparkSession.builder.master("local")
-        .appName("test")
+        SparkSession.builder.master("yarn")
+        .appName("datamart-process")
         .config("spark.dynamicAllocation.enabled", "true")
         .getOrCreate()
     )
